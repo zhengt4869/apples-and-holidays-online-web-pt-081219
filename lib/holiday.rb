@@ -73,9 +73,9 @@ def all_supplies_in_holidays(holiday_hash)
       n = supplies.length - 1 
       supplies.each do |supply|
         if index == n
-          res += supply.capitalize
+          res += supply
         else 
-          res += supply.capitalize + ", "
+          res += supply + ", "
         end
         index += 1 
       end 
