@@ -67,6 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
       re_holiday = ""
       holiday.to_s.split("_").each do |word|
         re_holiday += word.capitalize + " "
+      end 
       new_holiday = re_holiday[0, re_holiday.length-1]
       res = "  "+ new_holiday + ": "
       index = 0
